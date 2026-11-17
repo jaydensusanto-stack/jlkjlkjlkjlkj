@@ -1,0 +1,496 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+.jayden-container {
+    width: 100%;
+    max-width: 597px;
+    min-height: 759px;
+    margin: 0 auto;
+    padding: 6px 14px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+
+.jayden-header {
+    height: 106px;
+    min-height: 106px;
+    background-color: #c9d3dc;
+    border-radius: 9px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jayden-header-text {
+    width: 100%;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: -8px;
+}
+
+.jayden-header h1 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #111111;
+}
+
+.jayden-header-line {
+    width: 245px;
+    max-width: 100%;
+    height: 3px;
+    background-color: #111111;
+    margin: 0 auto 2px;
+}
+
+.jayden-header p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+.jayden-placeholder {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        to bottom,
+        #bfe8f8 0%,
+        #e1f6ff 65%,
+        #d8eff9 100%
+    );
+    flex-shrink: 0;
+}
+
+.jayden-cloud {
+    position: absolute;
+    width: 29px;
+    height: 13px;
+    background: white;
+    border-radius: 15px;
+    top: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.jayden-cloud::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50%;
+    left: 5px;
+    top: -8px;
+}
+
+.jayden-hill {
+    position: absolute;
+    width: 120%;
+    height: 27%;
+    left: -5%;
+    bottom: 0;
+    background: #a9cf45;
+    border-radius: 50% 50% 0 0;
+}
+
+.jayden-hill::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    left: 35%;
+    top: 25%;
+    background: #85a900;
+    border-radius: 50% 50% 0 0;
+}
+
+.jayden-profile-photo {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 18px;
+    top: 16px;
+}
+
+.jayden-small-photo {
+    width: 28px;
+    height: 28px;
+}
+
+.jayden-tiny-photo {
+    width: 15px;
+    height: 15px;
+}
+
+.jayden-achievement-photo {
+    width: 110px;
+    height: 110px;
+}
+
+.jayden-interest-photo {
+    width: 28px;
+    height: 28px;
+}
+
+.jayden-about-photo {
+    width: 75px;
+    height: 75px;
+}
+
+
+
+.jayden-row {
+    display: grid;
+    grid-template-columns: 32% 1fr;
+    gap: 9px;
+    height: 120px;
+    min-height: 120px;
+}
+
+
+
+.jayden-card {
+    background-color: #c9d3dc;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+
+
+.jayden-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 12px 0;
+}
+
+.jayden-card h2 {
+    font-size: 21px;
+    font-weight: 400;
+    color: #111111;
+}
+
+
+.jayden-contact {
+    padding-top: 0;
+}
+
+.jayden-contact .jayden-section-heading {
+    padding-top: 0;
+    gap: 8px;
+}
+
+.jayden-contact .jayden-section-heading h2 {
+    font-size: 12px;
+    color: #444444;
+}
+
+.jayden-contact-list {
+    padding: 7px 14px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.jayden-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.jayden-contact-item p {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+
+.jayden-education {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 5px 12px;
+}
+
+.jayden-education-content {
+    text-align: center;
+    flex: 1;
+    padding-right: 13px;
+}
+
+.jayden-education h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: -2px;
+    margin-bottom: 3px;
+}
+
+.jayden-education p {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+
+
+.jayden-skills {
+    padding-top: 0;
+}
+
+.jayden-centered-list {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.jayden-centered-list p {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+
+
+.jayden-achievement {
+    display: flex;
+    align-items: center;
+    padding: 6px 11px;
+    gap: 20px;
+}
+
+.jayden-achievement-content {
+    flex: 1;
+    text-align: center;
+}
+
+.jayden-achievement h2 {
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.jayden-achievement p {
+    font-size: 12px;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+
+
+.jayden-interest {
+    padding-top: 0;
+}
+
+.jayden-interest-photos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 35px;
+}
+
+
+
+.jayden-experience {
+    display: flex;
+    align-items: flex-start;
+    padding: 6px 10px;
+    gap: 10px;
+}
+
+.jayden-experience-content {
+    flex: 1;
+    text-align: center;
+    padding-right: 4px;
+}
+
+.jayden-experience h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+.jayden-experience p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 3px;
+}
+
+
+
+.jayden-about {
+    height: 227px;
+    min-height: 227px;
+    padding: 10px 13px;
+}
+
+.jayden-about-heading {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.jayden-about h2 {
+    font-size: 21px;
+}
+
+.jayden-about-text {
+    text-align: center;
+    padding: 14px 8px 0;
+}
+
+.jayden-about-text p {
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+
+
+
+@media (max-width: 450px) {
+
+    .jayden-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .jayden-row {
+        grid-template-columns: 32% 1fr;
+        gap: 6px;
+    }
+
+    .jayden-card h2 {
+        font-size: 17px;
+    }
+
+    .jayden-education {
+        gap: 8px;
+    }
+
+    .jayden-education h2 {
+        font-size: 25px;
+    }
+
+    .jayden-achievement {
+        gap: 8px;
+        padding: 6px;
+    }
+
+    .jayden-achievement-photo {
+        width: 75px;
+        height: 100px;
+    }
+
+    .jayden-achievement h2,
+    .jayden-experience h2 {
+        font-size: 15px;
+    }
+
+    .jayden-achievement p,
+    .jayden-experience p {
+        font-size: 10px;
+        white-space: normal;
+    }
+
+    .jayden-experience {
+        gap: 5px;
+    }
+
+    .jayden-about-text p {
+        font-size: 10px;
+    }
+}
+
+
+.jayden-profile-photo {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 18px;
+    top: 16px;
+    border: 3px solid #ffffff;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.jayden-profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 100%;
+    display: block;
+}
+
+.jayden-small-photo {
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.jayden-small-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.jayden-tiny-photo {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.jayden-tiny-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.jayden-achievement-photo img {
+    width: 110px !important;
+    height: 110px !important;
+    object-fit: cover;
+}
+
+.jayden-interest-photo img {
+    width: 30px !important;
+    height: 30px !important;
+    object-fit: cover;
+    
+}
+
+.jayden-about-photo img {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.jayden-profile-link {
+    display: block;
+    position: absolute;
+    left: 18px;
+    top: 16px;
+    width: 75px;
+    height: 75px;
+}
+
+.jayden-profile-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

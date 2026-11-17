@@ -1,0 +1,112 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #000;
+  font-family: "Quicksand", "Century Gothic", Arial, sans-serif;
+  color: #000;
+  padding: 30px 20px;
+}
+
+[class~="Diego.Ananta-page"] {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+[class~="Diego.Ananta-card"] {
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+
+[class~="Diego.Ananta-pic"] {
+  background:
+    radial-gradient(ellipse 70% 30% at 30% 100%, #8aa500 0 98%, transparent 100%),
+    radial-gradient(ellipse 90% 35% at 70% 92%, #c6e08a 0 98%, transparent 100%),
+    linear-gradient(#bfe7ff, #eaf7ff);
+  flex-shrink: 0;
+}
+[class~="Diego.Ananta-pic"][class~="Diego.Ananta-round"] { border-radius: 50%; }
+
+
+[class~="Diego.Ananta-header"] {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 36px 56px;
+}
+[class~="Diego.Ananta-header"] [class~="Diego.Ananta-pic"] { width: 160px; height: 160px; object-fit: cover; }
+[class~="Diego.Ananta-header"] h1 { font-size: 2.6rem; font-weight: 500; }
+[class~="Diego.Ananta-header"] hr { border: 0; border-top: 3px solid #000; width: 420px; max-width: 100%; margin: 14px 0 10px; }
+[class~="Diego.Ananta-header"] p { font-size: 1.1rem; line-height: 1.5; }
+
+
+[class~="Diego.Ananta-title"] {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 10px 20px 8px;
+  border-bottom: 3px solid #000;
+}
+[class~="Diego.Ananta-title"] h2 { font-size: 2.1rem; font-weight: 500; }
+[class~="Diego.Ananta-title"] [class~="Diego.Ananta-pic"] { width: 56px; height: 56px; }
+[class~="Diego.Ananta-title"] [class~="Diego.Ananta-pic"][class~="Diego.Ananta-sq"] { border-radius: 0; }
+
+[class~="Diego.Ananta-body"] { padding: 16px 28px 20px; }
+
+
+[class~="Diego.Ananta-contact-item"] {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 14px 0 22px;
+  font-size: 1.15rem;
+  word-break: break-all;
+}
+[class~="Diego.Ananta-contact-item"] [class~="Diego.Ananta-pic"] { width: 44px; height: 44px; }
+[class~="Diego.Ananta-contact-item"] img[class~="Diego.Ananta-pic"] { background: none; }
+
+
+ul { list-style: disc; padding-left: 62px; }
+[class~="Diego.Ananta-big"] li { font-size: 2.2rem; line-height: 1.3; }
+[class~="Diego.Ananta-small"] li { font-size: 1rem; line-height: 1.5; }
+[class~="Diego.Ananta-ach"] { padding: 18px 20px 20px 30px; }
+[class~="Diego.Ananta-ach"] li { font-size: 1.45rem; line-height: 1.5; }
+
+
+[class~="Diego.Ananta-hobby-icons"] {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 20px 14px;
+}
+[class~="Diego.Ananta-hobby-icons"] [class~="Diego.Ananta-pic"] { width: 56px; height: 56px; }
+
+
+[class~="Diego.Ananta-contact"] { grid-column: 1; }
+[class~="Diego.Ananta-education"] { grid-column: 2; }
+[class~="Diego.Ananta-left"] { grid-column: 1; display: flex; flex-direction: column; gap: 24px; }
+[class~="Diego.Ananta-achieve"] { grid-column: 2; }
+
+
+[class~="Diego.Ananta-about"] { grid-column: 1 / -1; }
+[class~="Diego.Ananta-about"] p {
+  padding: 14px 40px 36px;
+  text-align: center;
+  font-size: 1.35rem;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 700px) {
+  [class~="Diego.Ananta-page"] { grid-template-columns: 1fr; }
+  [class~="Diego.Ananta-contact"], [class~="Diego.Ananta-education"], [class~="Diego.Ananta-left"], [class~="Diego.Ananta-achieve"] { grid-column: 1; }
+  [class~="Diego.Ananta-header"] { flex-direction: column; text-align: center; padding: 28px 20px; }
+  [class~="Diego.Ananta-header"] h1 { font-size: 2rem; }
+  [class~="Diego.Ananta-ach"] li { font-size: 1.1rem; }
+  [class~="Diego.Ananta-about"] p { font-size: 1.05rem; padding: 14px 20px 26px; }
+}
